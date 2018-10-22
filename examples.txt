@@ -1,3 +1,17 @@
+to kock :size :iter
+  if :iter = 1 [fd :size stop]
+  kock :size / 3 :iter - 1
+  lt 45 
+  kock :size / 3 :iter - 1
+  rt 90 
+  kock :size / 3 :iter - 1 
+  lt 45 
+  kock :size / 3 :iter - 1
+end
+window clearscreen 
+pu rt 90 bk 400 pd
+kock 300 3
+
 to star
   repeat 5 [ fd 100 rt 144 ]
 end
